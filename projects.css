@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
+
+body {
+    background-color: darkolivegreen;
+}
+
+* {
+    padding: 25px;
+    margin: 25px;
+}
+
+p {
+    font-size: 60px;
+    font-family: 'Mansalva';
+    color: white;
+    text-align: center;
+}
+
+button {
+    border: darkgreen 5px dotted;
+    border-radius: 30px;
+    background-color: darksalmon;
+    margin: 13px;
+  
+}
+
+a {
+    font-family: 'Elsie';
+    color: deeppink;
+    font-size: 22px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 30px;
+    color: firebrick;
+}
