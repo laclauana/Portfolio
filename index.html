@@ -7,12 +7,14 @@
     <title>Proyecto Portfolio CSS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
 
-    <head>
-        <nav class="head">
+    <header>
+        <nav class="header">
+            <div class="menu-button"><button><i class="fas fa-bars"></i></button></div>
             <ul class="tool-bar">
                 <li><a href="#introduction">About me</a></li>
                 <li><a href="#tools">Tools</a></li>
@@ -20,7 +22,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </head>
+    </header>
 
 
     <div id="introduction" class="introduction">
@@ -29,13 +31,11 @@
             <p>Proud mom. Writer for fun. Mad about ice-cream.</p>
             <p>¿What can I do?</p>
             <p><a href="#projects">Let me show you</a></p>
-
         </div>
         <div class="image">
             <img src="./images/woman with a cup.jpg">
         </div>
     </div>
-
 
     <section id="tools" class="tools">
         <h1>My tools</h1>
@@ -44,84 +44,77 @@
         <div class="my-tools">
 
             <div class="each-tool">
-                <img class="tool-image"
-                    src="https://st.depositphotos.com/1796420/4113/v/950/depositphotos_41138921-stock-illustration-vector-icon-of-orange-javascript.jpg">
-                <p>Javascript</p>
-
+                <img class="tool-image" src="https://image.flaticon.com/icons/svg/1216/1216733.svg">
+                <p>HTML5</p>
             </div>
             <div class="each-tool">
                 <img class="tool-image" src="https://image.flaticon.com/icons/png/512/919/919826.png">
                 <p>CSS3</p>
-
             </div>
             <div class="each-tool">
                 <img class="tool-image"
                     src="https://img1.freepng.es/20180815/ta/kisspng-sass-logo-cascading-style-sheets-scalable-vector-g-codzero-cms-blog-tool-publishing-platform-5b74aaa0a0f4b2.3928971215343725126593.jpg">
                 <p>Sass</p>
-
             </div>
-
-        </div>
-        <div class="my-tools">
             <div class="each-tool">
-                <img class="tool-image" src="https://image.flaticon.com/icons/svg/1216/1216733.svg">
-                <p>HTML5</p>
-
+                <img class="tool-image"
+                    src="https://st.depositphotos.com/1796420/4113/v/950/depositphotos_41138921-stock-illustration-vector-icon-of-orange-javascript.jpg">
+                <p>JavaScript</p>
             </div>
             <div class="each-tool">
                 <img class="tool-image"
                     src="https://desafiolatam.com/assets/cursos/react/icono-react-8e9b14b4495e5a21ccd56ea61f95a7fc30fc5eb8ee92e44fefd1277d62a93296.png">
                 <p>React</p>
-
             </div>
             <div class="each-tool">
                 <img class="tool-image"
                     src="https://img2.freepng.es/20180515/szw/kisspng-bash-git-computer-icons-installation-command-line-5afaca8a063267.8597770915263852900254.jpg">
                 <p>Git</p>
-
             </div>
 
         </div>
     </section>
+
     <aside>
         <p>“Be the change you want to see in the world.”</p>
         <p>Mahatma Gandhi</p>
     </aside>
+
     <section id="projects">
+
+        <h1>My projects</h1>
+
+        <nav>
+            <ul class="my-project-links">
+                <li><a href="https://github.com/anaclette?tab=repositories">All of them</a></li>
+                <li><a href="https://github.com/anaclette?tab=repositories">HTML5/CSS</a></li>
+                <li><a href="./taller JS Ada/taller.html">JavaScript</a></li>
+                <li><a href="projects.html">React</a></li>
+
+            </ul>
+        </nav>
+
         <div class="my-projects">
-            <h1>My projects</h1>
-            <nav>
-                <ul class="my-project-links">
-                    <li><a href="https://github.com/anaclette?tab=repositories">All of them</a></li>
-                    <li><a href="https://github.com/anaclette?tab=repositories">HTML5/CSS</a></li>
-                    <li><a href="./taller JS Ada/taller.html">JavaScript</a></li>
-                    <li><a href="projects.html">React</a></li>
-
-                </ul>
-            </nav>
-            <div class="my-projects">
-                <div class="each-project">
-                    <img class="project-image" src="./images/puzzle.jpg">
-                    <p><a href="projects.html">Fun puzzle</a></p>
-
-                </div>
-                <div class="each-project">
-                    <img class="project-image" src="./images/design.png">
-                    <p><a href="https://github.com/anaclette?tab=repositories">Portfolio</a></p>
-
-                </div>
-                <div class="each-project">
-                    <img class="project-image" src="./images/rockpapersissors.jpg">
-                    <p><a href="./taller JS Ada/taller.html">Rock, Paper, Sissors</a></p>
-
-                </div>
-                <div class="each-project">
-                    <img class="project-image" src="./images/website.png">
-                    <p><a href="index.html">Static website</a></p>
-
-                </div>
+            <div class="each-project">
+                <img class="project-image" src="./images/puzzle.jpg">
+                <p><a href="projects.html">Fun puzzle</a></p>
             </div>
+            <div class="each-project">
+                <img class="project-image" src="./images/design.png">
+                <p><a href="https://github.com/anaclette?tab=repositories">Portfolio</a></p>
+            </div>
+            <div class="each-project">
+                <img class="project-image" src="./images/rockpapersissors.jpg">
+                <p><a href="./taller JS Ada/taller.html">Rock, Paper, Sissors</a></p>
+            </div>
+            <div class="each-project">
+                <img class="project-image" src="./images/website.png">
+                <p><a href="index.html">Static website</a></p>
+
+            </div>
+        </div>
     </section>
+
     <footer id="contact">
         <div class="footer">
             <nav>
@@ -133,16 +126,19 @@
 
                 </ul>
             </nav>
+
             <div class="icons">
                 <a href="https://es-es.facebook.com/ana.laclau"><i class="devicon-facebook-plain colored"></i></a>
                 <a href="https://github.com/anaclette"><i class="devicon-github-plain colored"></i></a>
                 <a href="https://twitter.com/ana_cleta92"><i class="devicon-twitter-plain colored"></i></a>
                 <a href="https://www.linkedin.com/in/laclauana/"> <i class="devicon-linkedin-plain colored"></i></a>
             </div>
+
             <h4>Thank you for your visit & ¡have a great day!</h4>
         </div>
 
     </footer>
+
 </body>
 
 </html>

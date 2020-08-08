@@ -10,7 +10,8 @@ html {
 nav {
     margin: 40px;
 }
-section, .head, .introduction {
+
+section, header, .introduction {
     padding-bottom: 45px;
 }
 
@@ -38,6 +39,10 @@ h1 {
     text-align: center;
 }
 
+.menu-button {
+    display: none;
+}
+
 .image img {
     border-radius: 285px;
     box-sizing: border-box;
@@ -45,6 +50,7 @@ h1 {
 
 .introduction {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -70,7 +76,7 @@ h1 {
 
 .tools {
     background: linear-gradient(to bottom, rgb(230, 204, 179), #f0bf75, #d4a274, #f3c299, #f2f39c);
-    border-radius: 5px; 
+    border-radius: 5px;   
     
 }
 
@@ -100,15 +106,15 @@ h1 {
 
 .my-projects, .my-tools {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    align-content: center; 
+
 }
 
 .my-project-links {
     list-style-type: none;
     display: flex;
+    justify-content: center;
     color: burlywood;
     font-size: 26px;
     font-family: Elsie;
@@ -205,11 +211,31 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-    .tools, .introduction, .my-projects {
+    .tools, .introduction, .my-projects{
         max-width: max-content;
     }
-        
+
+    .bottom-tool-bar, .tool-bar {
+        display: none;
     }
+
+    .menu-button {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    }
+
+@media (max-width: 600px) {
+    .bottom-tool-bar, .tool-bar {
+        display: none;
+    }
+    .menu-button {
+        display: flex;
+        justify-content: flex-end;
+ 
+    }
+}
 
     
 
