@@ -289,23 +289,6 @@ body::-webkit-scrollbar-thumb:hover {
         justify-content: flex-end;
     }
 
-    .menu-button:active {
-        display: none;
-    }
-    .menu-button:active ~ .tool-bar {
-        display: flex;
-        flex-direction: column;
-  
-    }
-
-    .my-project-links li {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        max-width: 30%;
-    }
-
 }
 
     
