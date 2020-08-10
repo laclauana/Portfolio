@@ -257,15 +257,6 @@ body::-webkit-scrollbar-thumb:hover {
 
     }
 
-    .menu-button:active {
-        display: none;
-    }
-    .menu-button:active ~ .tool-bar {
-        display: flex;
-        flex-direction: column;
-  
-    }
-
     .my-project-links li {
         display: flex;
         justify-content: space-evenly;
