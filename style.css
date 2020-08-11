@@ -279,6 +279,29 @@ body::-webkit-scrollbar-thumb:hover {
         display: flex;
         justify-content: flex-end;
     }
+
+    .my-tools {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+    }
+
+    .my-projects {
+        display: flex;
+        justify-content: space-evenly;
+   
+    }
+
+    .each-project {
+        display: flex;
+        width: 50%;
+        height: auto;
+        box-sizing: border-box;
+        margin-right: 0;
+        margin-left: 0;
+        padding: auto;
+    }
+
     .my-project-links li {
         display: flex;
         justify-content: space-evenly;
