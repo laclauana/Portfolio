@@ -280,26 +280,11 @@ body::-webkit-scrollbar-thumb:hover {
         justify-content: flex-end;
     }
 
-    .my-tools {
+    .my-tools, .my-projects {
         display: flex;
         justify-content: center;
         min-width: 100%;
-    }
-
-    .my-projects {
-        display: flex;
-        justify-content: space-evenly;
-   
-    }
-
-    .each-project {
-        display: flex;
-        width: 50%;
-        height: auto;
-        box-sizing: border-box;
-        margin-right: 0;
-        margin-left: 0;
-        padding: auto;
+        margin: 0;
     }
 
     .my-project-links li {
