@@ -49,3 +49,16 @@ a:hover {
     font-size: 35px;
     color: firebrick;
 }
+
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+    }
+
+    p {
+        font-size: 3rem;
+        margin-bottom: 60px;
+    }
+
+  
+}
