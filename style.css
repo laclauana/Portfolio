@@ -40,6 +40,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
+
 }
 
 .header {
@@ -55,6 +56,7 @@ h1 {
 .image img {
     border-radius: 285px;
     box-sizing: border-box;
+ 
 }
 
 .introduction {
@@ -95,6 +97,7 @@ h1 {
     width: auto;
     height: 100px;
     background-color: white;
+
 }
 
 .each-tool:hover, .each-tool a:hover {
@@ -112,6 +115,9 @@ h1 {
     border-radius: 115px;
     padding: 23px;
     margin: 25px;
+    -webkit-box-shadow: 10px 7px 7px 3px rgba(102,96,102,0.79);
+    -moz-box-shadow: 10px 7px 7px 3px rgba(102,96,102,0.79);
+    box-shadow: 10px 7px 7px 3px rgba(102,96,102,0.79);
   
 }
 
@@ -160,6 +166,7 @@ h1 {
 .each-project a:hover {
     font-size: 35px;
     color: rgba(220, 20, 60, 0.692);
+    
 }
 
 .tool-bar {
@@ -171,6 +178,7 @@ h1 {
 .tool-bar a:hover, .my-project-links a:hover, .bottom-tool-bar a:hover {
     background-color: rgb(180, 75, 107);
     color: white;
+  
 }
 
 .tool-bar a, .my-project-links a, .bottom-tool-bar a {
@@ -258,11 +266,9 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     .my-project-links li {
-        display: flex;
-        justify-content: space-evenly;
+        display: flex; 
         align-items: center;
         text-align: center;
-        max-width: 30%;
     }
 
     .each-project, .each-tool {
