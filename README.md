@@ -1,4 +1,4 @@
-# First Ada ITW proyect
+# Ada ITW first project
 
 ## Personal webpage using HTML5, CSS, lots of joy and a hint of excitement!
 
