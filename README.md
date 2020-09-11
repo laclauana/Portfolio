@@ -12,4 +12,4 @@
 
 ### Where to check on my first static website
 
-[https://anaclette.github.io/Proyecto-CSS/]
+[https://anaclette.github.io/CSS-Portfolio-Project/]
