@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 html {
+    /* el color de fondo en general se lo damos al body; no hay necesidad de ponerle display flex al html 
+    (display flex no se hereda, y html tiene un solo hijo: body */
     background-color: rgb(230, 204, 179);
     display: flex;
 }
@@ -17,11 +19,13 @@ span {
     color: crimson;
 }
   
+/* como esta etiqueta aparece mas abajo en el codigo, no deberia estar aqui, sino despues de "mis skills" */
 aside {
     background: radial-gradient(circle, rgb(185, 170, 67) 6%, #b3b475 56%, rgb(230, 204, 179) 100%);
     border: solid 7px darkgreen;
     border-radius: 8px;
     color: cornsilk;
+    /* no es necesario width auto, es lo que se pone por defecto */
     width: auto;
     height: 400px;
     font-family: 'Mansalva';
@@ -37,6 +41,7 @@ h1 {
     color: crimson;
     font-size: 75px;
     text-align: center;
+    /* no es necesario display flex en un h1, ya que no tiene descendientes, solo texto */
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
@@ -55,6 +60,8 @@ h1 {
 
 .image img {
     border-radius: 285px;
+
+    /* esta propiedad sirve cuando hay padding o borde, algo que no ocurre aqui */
     box-sizing: border-box;
  
 }
@@ -96,6 +103,7 @@ h1 {
 .tool-image, .project-image {
     width: auto;
     height: 100px;
+    /* las imagenes no tienen background color! */
     background-color: white;
 
 }
@@ -154,6 +162,8 @@ h1 {
     font-size: 28px;
     text-align: center;
     text-decoration: none;
+
+    /* estos son links, solo tienen texto, no es necesario flex aca  */
     display: flex;
     justify-content: center;
 
@@ -226,6 +236,7 @@ h1 {
 
 }
 
+/* esto deberia ir mas arriba, ya que es un estilo general  */
 body::-webkit-scrollbar {
 	background-color: rgb(230, 204, 179);
 	border-radius: 4px;
@@ -241,6 +252,7 @@ body::-webkit-scrollbar-thumb:hover {
 	background: rgb(175, 90, 90);
 }
 
+/* no deberias dejar una media query vacia  */
 @media (min-width: 1800px) {
     
 }
@@ -301,7 +313,8 @@ body::-webkit-scrollbar-thumb:hover {
         max-width: 30%;
 
 }
-
+/* fijate que no cerras la media query. hoy por hoy no te trae un error, pero si quisieras agregar una nueva aqui abajo
+no se te aplicaria  */
     
 
 
