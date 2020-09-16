@@ -51,6 +51,22 @@ h1 {
 
 .menu-button {
     display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button > a {
+    text-decoration: none;
+    font-family: 'Elsie';
+    font-size: 200%;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: darkred;
+    color: wheat;
+}
+
+.fa-bars {
+    margin-left: 8px;
 }
 
 .image img {
@@ -144,7 +160,7 @@ h1 {
     justify-content: center;
     color: burlywood;
     font-size: 26px;
-    font-family: Elsie;
+    font-family: 'Elsie';
     margin-top: 0;
 }
 
@@ -224,6 +240,49 @@ h1 {
     text-decoration: none;
     padding: 25px;
 
+}
+
+header .ocultar {
+    display: none;
+}
+
+.display-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 179, 160);
+    position: fixed;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.toolbar-displaymenu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    /* flex-basis: 100%; */
+    /* position: relative; */
+}
+
+.toolbar-displaymenu>li {
+    margin: 12px;
+}
+
+.toolbar-displaymenu a {
+    text-decoration: none;
+    background-color: brown;
+    color: burlywood;
+    padding: 8px;
+    border-radius: 50px;
+    border: rgb(230, 204, 179) dotted 2px;
+    font-size: 17px;
+    font-family: Elsie;
 }
 
 body::-webkit-scrollbar {
