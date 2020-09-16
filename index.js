@@ -6,6 +6,7 @@ const eachLink = document.querySelectorAll(".toolbar-displaymenu a")
 responsiveMenu.onclick = () => {
     showLinks.classList.remove("ocultar")
     menuLinks.classList.remove("ocultar")
+    responsiveMenu.classList.add("ocultar")
 }
 
 for (let link of eachLink) {

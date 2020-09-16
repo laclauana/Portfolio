@@ -12,4 +12,8 @@
 
 ### Where to check on my first static website
 
+<<<<<<< HEAD
 [https://anaclette.github.io/CSS-Portfolio-Project/]
+=======
+[https://anaclette.github.io/Portfolio/]
+>>>>>>> db70a51fc22e2957d4d88643aad9597b0c92104b
