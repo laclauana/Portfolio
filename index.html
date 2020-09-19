@@ -13,10 +13,10 @@
 
 <body>
 
-
+    <!-- -------------------------- header menu section --------------------------- -->
     <header>
         <div class="display-menu ocultar">
-            <ul class="ocultar toolbar-displaymenu ">
+            <ul class="ocultar toolbar-displaymenu">
                 <li><a href="#introduction">About me</a></li>
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -35,10 +35,11 @@
         </nav>
     </header>
 
+    <!-- ------------------ introduction, first section ------------------------- -->
 
     <div id="introduction" class="introduction">
         <div class="introduction-message">
-            <p>¡Hi there! I'm <span> anaclette </span>. </p>
+            <h1>¡Hi there! I'm <span> anaclette </span>. </h1>
             <p>Proud mom. Writer for fun. Mad about ice-cream.</p>
             <p>¿What can I do?</p>
             <p><a href="#projects">Let me show you</a></p>
@@ -48,8 +49,9 @@
         </div>
     </div>
 
+<!-- ----------------------- My tools, second section ---------------------- -->
 
-    <h1>My tools</h1>
+    <h2>My tools</h2>
 
     <p class="tools-intro">These are the resources I can make amazing stuff with.</p>
 
@@ -89,39 +91,46 @@
         </div>
     </section>
 
+    <!-- ------------------------- aside quote ----------------------------- -->
+
     <aside>
         <p>“Be the change you want to see in the world.”</p>
         <p>Mahatma Gandhi</p>
     </aside>
 
-    <h1>My projects</h1>
+    <!-- ------------------------ My projects, third section ---------------- -->
+
+    <h2>My projects</h2>
+
+<!-- ------------------ menu project links ------------------------- -->
 
     <section id="projects">
         <nav>
             <ul class="my-project-links">
-                <li><a target="_blank" href="https://github.com/anaclette?tab=repositories">HTML5/CSS</a></li>
-                <li><a target="_blank" href="https://anaclette.github.io/RockPaperSissors/">JavaScript</a></li>
-                <li><a target="_blank" href="https://github.com/anaclette?tab=repositories">All of them</a></li>
-                <li><a href="projects.html">React</a></li>
+                <li id="my-projects-button" data-name="static-website"><a>HTML5/CSS</a></li>
+                <li id="my-projects-button" data-name="rock-paper-scissors"><a>JavaScript</a></li>
+                <li id="my-projects-button" data-integrate="all-of-them"><a>All of them</a></li>
+                <li id="my-projects-button" data-name="puzzle"><a>React</a></li>
 
             </ul>
         </nav>
 
+<!-- ----------------------- each project cards ---------------------- -->
 
         <div class="my-projects">
-            <div class="each-project">
+            <div class="each-project" data-name="puzzle" data-integrate="all-of-them">
                 <img class="project-image" src="./images/puzzle.jpg">
                 <p><a href="projects.html">Fun puzzle</a></p>
             </div>
-            <div class="each-project">
+            <div class="each-project" data-name="portfolio" data-integrate="all-of-them">
                 <img class="project-image" src="./images/design.png">
                 <p><a target="_blank" href="https://github.com/anaclette?tab=repositories">Portfolio</a></p>
             </div>
-            <div class="each-project">
+            <div class="each-project" data-name="rock-paper-scissors" data-integrate="all-of-them">
                 <img class="project-image" src="./images/rockpapersissors.jpg">
                 <p><a target="_blank" href="https://anaclette.github.io/RockPaperSissors/">Rock, Paper, Scissors</a></p>
             </div>
-            <div class="each-project">
+            <div class="each-project" data-name="static-website" data-integrate="all-of-them">
                 <img class="project-image" src="./images/website.png">
                 <p><a href="index.html">Static website</a></p>
 
@@ -129,8 +138,9 @@
         </div>
     </section>
 
+    <!-- ---------------------- final section or footer ---------------------- -->
+    
     <footer id="contact">
-        <div class="footer">
             <nav>
                 <ul class="bottom-tool-bar">
                     <li><a href="#introduction">About me</a></li>
@@ -151,9 +161,7 @@
                         class="devicon-linkedin-plain colored"></i></a>
             </div>
 
-            <h4>Thank you for your visit & ¡have a great day!</h4>
-        </div>
-
+            <h3>Thank you for your visit & ¡have a great day!</h3>
     </footer>
 
     <script src="index.js"></script>

@@ -2,288 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
-html {
-    background-color: rgb(230, 204, 179);
-    display: flex;
-}
-
-section, header, .introduction {
-    padding-bottom: 45px;
-
-}
-
-span {
-    font-size: 55px;
-    color: crimson;
-}
-  
-aside {
-    background: radial-gradient(circle, rgb(185, 170, 67) 6%, #b3b475 56%, rgb(230, 204, 179) 100%);
-    border: solid 7px darkgreen;
-    border-radius: 8px;
-    color: cornsilk;
-    width: auto;
-    height: 400px;
-    font-family: 'Mansalva';
-    font-size: 55px;
-    text-align: center;
-    padding-top: 40px;
-    margin-bottom: 100px;
-
-}
-
-h1 {
-    font-family: 'Monoton';
-    color: crimson;
-    font-size: 75px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-
-}
-
-.header {
-    display: flex;
-    justify-content: flex-end;
-    margin: 40px;
-}
-
-.menu-button {
-    display: none;
-    border: none;
-    background-color: transparent;
-}
-
-.menu-button > a {
-    text-decoration: none;
-    font-family: 'Elsie';
-    font-size: 200%;
-    padding: 10px;
-    border-radius: 12px;
-    background-color: darkred;
-    color: wheat;
-}
-
-.fa-bars {
-    margin-left: 8px;
-}
-
-.image img {
-    border-radius: 285px;
-    box-sizing: border-box;
- 
-}
-
-.introduction {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.introduction-message, .tools-intro, h4 {
-    font-family: 'Mansalva';
-    color: brown;
-    font-size: 30px;
-    text-align: center;
-}
-
-.introduction-message a {
-    text-decoration: none;
-    border-radius: 50px;
-    padding: 15px;
-    color: crimson;
-    font-size: 40px;
-}
-
-.introduction-message a:hover {
-    font-size: 47px;
-    color: rgba(220, 20, 60, 0.692);
-}
-
-.tools {
-    background: linear-gradient(to bottom, rgb(230, 204, 179), #f0bf75, #d4a274, #f3c299, #f2f39c);
-    border-radius: 5px;   
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.tool-image, .project-image {
-    width: auto;
-    height: 100px;
-    background-color: white;
-
-}
-
-.each-tool:hover, .each-tool a:hover {
-    cursor: url('./images/emoticon.png'), auto;
-}
-
-.each-tool, .each-project {
-    height: 200px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border: 1px solid rgb(224, 126, 192);
-    border-radius: 115px;
-    padding: 23px;
-    margin: 25px;
-    -webkit-box-shadow: 10px 7px 7px 3px rgba(102,96,102,0.79);
-    -moz-box-shadow: 10px 7px 7px 3px rgba(102,96,102,0.79);
-    box-shadow: 10px 7px 7px 3px rgba(102,96,102,0.79);
-  
-}
- 
-.my-tools {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    max-width: 80%;
-
-}
-
-.my-projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 60%;
-    margin-left: 20%;
-    margin-top: 5%;
-}
-
-.my-project-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    color: burlywood;
-    font-size: 26px;
-    font-family: 'Elsie';
-    margin-top: 0;
-}
-
-.each-project a, .each-tool a {
-    color: black;
-    font-family: 'Mansalva';
-    font-size: 28px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-
-}
-
-.each-project img {
-    border-radius: 100px;
-}
-
-.each-project a:hover {
-    font-size: 35px;
-    color: rgba(220, 20, 60, 0.692);
-    
-}
-
-.tool-bar {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-}
-
-.tool-bar a:hover, .my-project-links a:hover, .bottom-tool-bar a:hover {
-    background-color: rgb(180, 75, 107);
-    color: white;
-  
-}
-
-.tool-bar a, .my-project-links a, .bottom-tool-bar a {
-    text-decoration: none;
-    background-color: brown;
-    color: burlywood;
-    padding: 15px;
-    margin: 13px;
-    border-radius: 50px;
-    border: rgb(230, 204, 179) dotted 2px;
-    font-size: 26px;
-    font-family: Elsie;
- 
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, rgb(230, 204, 179), #f0cae6, #bb955d, #d89d65);
-    border: rgb(180, 75, 107) 1px dashed;
-    border-radius: 5px;
-    color: cornsilk;
-    text-align: center; 
-    padding-top: 20px;
-    margin-top: 100px;
-}
-
-.bottom-tool-bar {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-    padding-bottom: 25px;
-}
-
-.icons {
-    font-size: 45px;
-
-}
-
-.icons a {
-    background-color: transparent;
-    text-decoration: none;
-    padding: 25px;
-
-}
-
-header .ocultar {
-    display: none;
-}
-
-.display-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
- 
-}
-
-.toolbar-displaymenu {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    color: white;
-    margin-right: 30px;
-
-}
-
-.toolbar-displaymenu>li {
-    margin: 12px;
-}
-
-.toolbar-displaymenu a {
-    text-decoration: none;
-    background-color: brown;
-    color: burlywood;
-    padding: 8px;
-    border-radius: 50px;
-    border: rgb(230, 204, 179) dotted 2px;
-    font-size: 17px;
-    font-family: Elsie;
-}
+/* ---------------- scrollbar styling ------------------- */
 
 body::-webkit-scrollbar {
 	background-color: rgb(230, 204, 179);
@@ -300,67 +19,386 @@ body::-webkit-scrollbar-thumb:hover {
 	background: rgb(175, 90, 90);
 }
 
-@media (min-width: 1800px) {
-    
+/* ---------------- tags properties ---------------- */
+
+html {
+	background-color: rgb(230, 204, 179);
+	display: flex;
 }
+
+header,
+section,
+.introduction {
+	padding-bottom: 45px;
+}
+
+span {
+	font-size: 55px;
+	color: crimson;
+}
+
+span::selection {
+	background-color: pink;
+	color: rgb(180, 75, 107);
+}
+
+h1::selection,
+.introduction a::selection {
+	background-color: wheat;
+	color: peru;
+}
+
+h2 {
+	font-family: 'Monoton';
+	color: crimson;
+	font-size: 75px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+aside {
+	background: radial-gradient(circle, rgb(185, 170, 67) 6%, #b3b475 56%, rgb(230, 204, 179) 100%);
+	border: solid 7px darkgreen;
+	border-radius: 8px;
+	color: cornsilk;
+	width: auto;
+	height: 400px;
+	font-family: 'Mansalva';
+	font-size: 55px;
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 100px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(to bottom, rgb(230, 204, 179), #f0cae6, #bb955d, #d89d65);
+	border: rgb(180, 75, 107) 1px dashed;
+	border-radius: 5px;
+	color: cornsilk;
+	text-align: center;
+	padding-top: 20px;
+	margin-top: 100px;
+}
+
+/* ------------------ hamburger menu button for less than 900px screens ------------ */
+
+header .ocultar {
+	top: -200px;
+}
+
+.fa-bars {
+	margin-left: 8px;
+}
+
+.display-menu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	display: flex;
+	width: 100%;
+	margin: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	transition: 2s;
+}
+
+.toolbar-displaymenu {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: white;
+	margin-right: 30px;
+}
+
+.toolbar-displaymenu > li {
+	margin: 12px;
+}
+
+.toolbar-displaymenu a {
+	text-decoration: none;
+	font-weight: bold;
+	color: brown;
+	font-size: 21px;
+	font-family: 'Elsie';
+	text-shadow: 2px 2px 1px rgb(149, 128, 131);
+}
+
+/* ---------------- class properties, first section ----------------- */
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+	margin: 40px;
+}
+
+.menu-button {
+	display: none;
+	border: none;
+	background-color: transparent;
+}
+
+.menu-button > a {
+	text-decoration: none;
+	font-family: 'Elsie';
+	font-size: 200%;
+	padding: 10px;
+	border-radius: 12px;
+	background-color: darkred;
+	color: wheat;
+}
+
+.image img {
+	border-radius: 285px;
+	box-sizing: border-box;
+}
+
+.introduction {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.introduction p::selection {
+	background-color: rgb(185, 170, 67);
+	color: whitesmoke;
+}
+
+h1,
+h3,
+.introduction-message,
+.tools-intro {
+	font-family: 'Mansalva';
+	color: brown;
+	font-size: 30px;
+	text-align: center;
+}
+
+.introduction-message a {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px;
+	color: crimson;
+	font-size: 40px;
+}
+
+.introduction-message a:hover {
+	font-size: 47px;
+	color: rgba(220, 20, 60, 0.692);
+}
+
+/* ------------------ class properties, second section (my tools) -------------- */
+
+.tool-bar {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+.tools {
+	background: linear-gradient(to bottom, rgb(230, 204, 179), #f0bf75, #d4a274, #f3c299, #f2f39c);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.tool-image,
+.project-image {
+	width: auto;
+	height: 100px;
+	background-color: white;
+}
+
+.each-tool:hover,
+.each-tool a:hover {
+	cursor: url('./images/emoticon.png'), auto;
+}
+
+.each-tool,
+.each-project {
+	height: 200px;
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	border: 1px solid rgb(224, 126, 192);
+	border-radius: 115px;
+	padding: 23px;
+	margin: 25px;
+	-webkit-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
+	-moz-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
+	box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
+}
+
+.my-tools {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	max-width: 80%;
+}
+
+/* ----------------- class properties third section (my projects) ----------------- */
+
+.my-projects {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 60%;
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+.my-project-links {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	color: burlywood;
+	font-size: 26px;
+	font-family: 'Elsie';
+	margin-top: 0;
+	cursor: pointer;
+}
+
+.each-project a,
+.each-tool a {
+	color: black;
+	font-family: 'Mansalva';
+	font-size: 28px;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+}
+
+.each-project img {
+	border-radius: 100px;
+}
+
+/* ---------------------- "a" tag properties for links ------------------ */
+
+.each-project a:hover {
+	font-size: 31px;
+	color: rgba(220, 20, 60, 0.692);
+}
+
+.tool-bar a:hover,
+.my-project-links a:hover,
+.bottom-tool-bar a:hover {
+	background-color: rgb(180, 75, 107);
+	color: white;
+}
+
+.tool-bar a,
+.my-project-links a,
+.bottom-tool-bar a {
+	text-decoration: none;
+	background-color: brown;
+	color: burlywood;
+	padding: 15px;
+	margin: 13px;
+	border-radius: 50px;
+	border: rgb(230, 204, 179) dotted 2px;
+	font-size: 26px;
+	font-family: Elsie;
+}
+
+/* -------------------- class properties for last section (footer) ------------------- */
+
+.bottom-tool-bar {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+	padding-bottom: 25px;
+}
+
+/* --------------------- properties for icons and their "a" tag ------------------ */
+
+.icons {
+	font-size: 45px;
+}
+
+.icons a {
+	background-color: transparent;
+	text-decoration: none;
+	padding: 25px;
+}
+
+/* --------------------- final class property for hidden elements ------------------ */
+
+.hidden {
+	display: none;
+}
+
+/* --------------------- end of styling for desktop screen sizes ------------------- */
+
+/* ----------------- responsive media queries design patterns ------------------- */
 
 @media (min-width: 600px) and (max-width: 900px) {
-    aside {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .tools, .introduction, .my-projects {
-        max-width: max-content;
-    }
+	aside {
+		max-width: 100%;
+		height: auto;
+	}
 
-    .bottom-tool-bar, .tool-bar {
-        display: none;
-    }
+	.tools,
+	.introduction,
+	.my-projects {
+		max-width: max-content;
+	}
 
-    .menu-button {
-        display: flex;
-        justify-content: flex-end;
+	.bottom-tool-bar,
+	.tool-bar {
+		display: none;
+	}
 
-    }
+	.menu-button {
+		display: flex;
+		justify-content: flex-end;
+	}
 
-    .my-project-links li {
-        display: flex; 
-        align-items: center;
-        text-align: center;
-    }
+	.my-project-links li {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
 
-    .each-project, .each-tool {
-        max-width: 30%;
-        height: auto;
-    }
-    }
-
-@media (max-width: 600px) {
-    .bottom-tool-bar, .tool-bar {
-        display: none;
-    }
-    .menu-button {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .my-tools, .my-projects {
-        display: flex;
-        justify-content: center;
-        min-width: 100%;
-        margin: 0;
-    }
-
-    .my-project-links li {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        max-width: 30%;
-
+	.each-project,
+	.each-tool {
+		max-width: 30%;
+		height: auto;
+	}
 }
 
-    
+@media (max-width: 600px) {
+	.bottom-tool-bar,
+	.tool-bar {
+		display: none;
+	}
+	.menu-button {
+		display: flex;
+		justify-content: flex-end;
+	}
 
+	.my-tools,
+	.my-projects {
+		display: flex;
+		justify-content: center;
+		min-width: 100%;
+		margin: 0;
+	}
 
+	.my-project-links li {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		text-align: center;
+		max-width: 30%;
+	}
+}
