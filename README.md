@@ -8,7 +8,7 @@
 
  ## Technologies used
 
- Mainly HTML and CSS. 
+ Mainly HTML and CSS and a bit of Javascript. 
 
 ### Where to check on my first static website
 
