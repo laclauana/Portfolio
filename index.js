@@ -1,13 +1,16 @@
 // ------------------ responsive hamburger menu ----------------
 
 const responsiveMenu = document.querySelector('#menu-button');
-const menuLinks = document.querySelector('.toolbar-displaymenu');
+const menuLinks = document.querySelectorAll('.tool-bar');
 const showLinks = document.querySelector('.display-menu');
-const eachLink = document.querySelectorAll('.toolbar-displaymenu a');
 
 responsiveMenu.onclick = () => {
 	showLinks.classList.toggle('ocultar');
-	menuLinks.classList.toggle('ocultar');
+	for (let link of menuLinks) {
+		link.classList.add('toolbar-displaymenu');
+		link.classList.remove('tool-bar');
+	}
+	// menuLinks.classList.toggle('ocultar');
 };
 
 // ------------------- project buttons -------------------------
