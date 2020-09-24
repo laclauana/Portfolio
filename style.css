@@ -355,9 +355,12 @@ h3,
 	}
 
 	.tools,
-	.introduction,
-	.my-projects {
+	.introduction {
 		max-width: max-content;
+	}
+
+	.my-projects {
+		min-width: 100%;
 	}
 
 	.bottom-tool-bar,
