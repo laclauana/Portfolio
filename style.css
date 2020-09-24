@@ -92,7 +92,7 @@ footer {
 /* ------------------ hamburger menu button for less than 900px screens ------------ */
 
 header .ocultar {
-	top: -200px;
+	top: 10px;
 }
 
 .fa-bars {
@@ -139,6 +139,7 @@ header .ocultar {
 
 .toolbar-displaymenu > li {
 	margin: 12px;
+	top: -200px;
 }
 
 .toolbar-displaymenu a {

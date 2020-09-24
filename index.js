@@ -9,8 +9,8 @@ responsiveMenu.onclick = () => {
 	for (let link of menuLinks) {
 		link.classList.add('toolbar-displaymenu');
 		link.classList.remove('tool-bar');
+		link.classList.toggle('ocultar');
 	}
-	// menuLinks.classList.toggle('ocultar');
 };
 
 // ------------------- project buttons -------------------------
