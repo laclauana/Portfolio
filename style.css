@@ -91,7 +91,7 @@ footer {
 
 /* ------------------ hamburger menu button for less than 900px screens ------------ */
 
-header .ocultar {
+header .hidden {
 	top: 10px;
 }
 
@@ -100,7 +100,6 @@ header .ocultar {
 }
 
 .menu-button {
-	display: none;
 	border: none;
 	background-color: transparent;
 }
