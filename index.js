@@ -5,11 +5,11 @@ const menuLinks = document.querySelectorAll('.tool-bar');
 const showLinks = document.querySelector('.display-menu');
 
 responsiveMenu.onclick = () => {
-	showLinks.classList.toggle('ocultar');
+	showLinks.classList.toggle('header.hidden');
 	for (let link of menuLinks) {
 		link.classList.add('toolbar-displaymenu');
 		link.classList.remove('tool-bar');
-		link.classList.toggle('ocultar');
+		link.classList.toggle('header.hidden');
 	}
 };
 
