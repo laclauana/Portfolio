@@ -1,33 +1,24 @@
-// ------------------ responsive hamburger menu ----------------
+// ----------------------- Variable declaration ----------------------
 
-const responsiveMenu = document.querySelector('#menu-button');
-const menuLinks = document.querySelectorAll('.tool-bar');
-const showLinks = document.querySelector('.display-menu');
+const menu = document.querySelector('.fa-bars');
+const menuLinks = document.querySelector('header ul');
+const projectLinks = document.querySelectorAll('.link');
+const projects = document.querySelectorAll('.each-project');
 
-responsiveMenu.onclick = () => {
-	showLinks.classList.toggle('header.hidden');
-	for (let link of menuLinks) {
-		link.classList.add('toolbar-displaymenu');
-		link.classList.remove('tool-bar');
-		link.classList.toggle('header.hidden');
-	}
+// ------------------ Display mobile menu ----------------
+
+menu.onclick = () => {
+	menuLinks.classList.toggle('mobile');
 };
 
-// ------------------- project buttons -------------------------
+// ------------------- Filter projects -------------------------
 
-const myProjects = document.querySelectorAll('.each-project');
-const projectButtons = document.querySelectorAll('#my-projects-button');
-
-for (let projectButton of projectButtons) {
-	projectButton.onclick = () => {
-		for (let project of myProjects) {
-			if (project.dataset.name === projectButton.dataset.name) {
-				project.classList.remove('hidden');
-			} else if (project.dataset.integrate === projectButton.dataset.integrate) {
-				project.classList.remove('hidden');
-			} else {
-				project.classList.add('hidden');
-			}
+projectLinks.forEach((link) => {
+	link.onclick = () => {
+		for (let project of projects) {
+			project.dataset.name === link.dataset.name || link.dataset.name === 'all-of-them'
+				? project.classList.remove('hidden')
+				: project.classList.add('hidden');
 		}
 	};
-}
+});

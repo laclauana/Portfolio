@@ -19,26 +19,122 @@ body::-webkit-scrollbar-thumb:hover {
 	background: rgb(175, 90, 90);
 }
 
-/* ---------------- tags properties ---------------- */
+/* --------------------------- body general appearance -------------------- */
 
-html {
+body {
 	background-color: rgb(230, 204, 179);
-	display: flex;
+	margin: 0;
+	text-align: center;
 }
 
-section {
+/* --------------------------- nav bar ------------------------------ */
+
+header {
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	margin: 18px;
+}
+
+nav a:not(button a) {
+	background-color: brown;
+	color: burlywood;
+	padding: 15px;
+	border-radius: 50px;
+	border: rgb(230, 204, 179) dotted 2px;
+	font-size: 26px;
+}
+
+li {
+	list-style: none;
+	display: inline-flex;
+	flex-wrap: wrap;
+	font-family: 'Elsie';
+}
+
+a {
+	margin: 10px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav a:hover {
+	background-color: indianred;
+	color: white;
+}
+
+button {
+	display: none;
+	border: none;
+	font-family: 'Elsie';
+	font-size: 25px;
+	padding: 7px;
+	border-radius: 12px;
+	background-color: darkred;
+}
+
+/* -------------------------- main content general alignment ----------------- */
+
+main:not(li),
+aside,
+footer,
+section:first-of-type p:not(div p),
+section:first-of-type h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-section,
-.introduction {
-	padding-bottom: 45px;
+/* ------------------------ introduction content alignment and general looks ---------------- */
+
+main div:first-child {
+	display: flex;
+	align-items: center;
+}
+
+main div:first-child div:first-child {
+	flex-direction: column;
+	margin: 50px;
+	font-family: 'Mansalva';
+	color: brown;
+	font-size: 25px;
+}
+
+main div:first-child div a {
+	color: crimson;
+}
+
+main div:first-child div p:last-child {
+	font-size: 35px;
+}
+
+main div:first-child div p a:hover {
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+main div:first-child div p::selection {
+	background-color: rgb(185, 170, 67);
+	color: whitesmoke;
+}
+
+main img:not(section img) {
+	border-radius: 150px;
+	width: 350px;
+}
+
+h1::selection,
+main div:first-child a::selection {
+	background-color: wheat;
+	color: peru;
 }
 
 span {
-	font-size: 55px;
+	letter-spacing: 3px;
 	color: crimson;
 }
 
@@ -47,368 +143,281 @@ span::selection {
 	color: rgb(180, 75, 107);
 }
 
-h1::selection,
-.introduction a::selection {
-	background-color: wheat;
-	color: peru;
-}
+/* ------------------------- titles appearance ------------------ */
 
 h2 {
 	font-family: 'Monoton';
 	color: crimson;
 	font-size: 75px;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 80px;
 }
 
+/* ------------------------------ both tools and projects sections ---------------------- */
+
+section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 170px;
+}
+
+section div {
+	width: 60vw;
+}
+
+section:nth-child(2) div,
+section:last-child > div {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+section:nth-child(2) {
+	background: linear-gradient(to bottom, rgb(230, 204, 179), #f0bf75, #d4a274, #f3c299, #f2f39c);
+}
+
+section:nth-child(2) div > div {
+	cursor: url('./images/emoticon.png'), auto;
+	justify-content: center;
+}
+
+section:nth-child(2) img {
+	height: 100px;
+}
+
+section:nth-child(2) a,
+section:last-child div a {
+	font-size: 23px;
+	color: black;
+}
+
+section:last-child div a:hover {
+	font-size: 25px;
+	color: rgb(180, 75, 107);
+}
+
+section:first-of-type p:not(div p),
+h3 {
+	font-family: 'Mansalva';
+	color: brown;
+	font-size: 30px;
+}
+
+section:last-child img {
+	height: 100px;
+	border-radius: 115px;
+	max-width: 155px;
+}
+
+section div > div {
+	-webkit-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
+	-moz-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
+	box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
+	border-radius: 115px;
+	background-color: white;
+	border: 1px solid rgb(224, 126, 192);
+	margin: 15px;
+	padding: 25px;
+	flex-direction: column;
+	width: 180px;
+	height: 180px;
+	font-family: 'Mansalva';
+}
+
+/* ----------------------------- aside quote --------------------------- */
+
 aside {
-	background: radial-gradient(circle, rgb(185, 170, 67) 6%, #b3b475 56%, rgb(230, 204, 179) 100%);
-	border: solid 7px darkgreen;
+	background: radial-gradient(circle, rgb(185, 170, 67) 6%, #b3b475 56%, rgb(230, 204, 179));
+	border: solid 7px rgb(185, 170, 67);
 	border-radius: 8px;
 	color: cornsilk;
-	width: auto;
-	height: 400px;
+	width: 97.7vw;
 	font-family: 'Mansalva';
 	font-size: 55px;
-	text-align: center;
-	padding-top: 40px;
-	margin-bottom: 100px;
+}
+
+/* -------------------------- icons and footer ---------------------- */
+
+i:not(button i) {
+	font-size: 45px;
+	padding: 25px;
+}
+
+button i {
+	color: wheat;
 }
 
 footer {
-	display: flex;
-	flex-direction: column;
 	background: linear-gradient(to bottom, rgb(230, 204, 179), #f0cae6, #bb955d, #d89d65);
 	border: rgb(180, 75, 107) 1px dashed;
 	border-radius: 5px;
 	color: cornsilk;
-	text-align: center;
-	padding-top: 20px;
-	margin-top: 100px;
 }
 
-/* ------------------ hamburger menu button for less than 900px screens ------------ */
-
-header.hidden {
-	top: 10px;
-}
-
-.fa-bars {
-	margin-left: 8px;
-}
-
-.menu-button {
-	border: none;
-	background-color: transparent;
-}
-
-.menu-button > a {
-	text-decoration: none;
-	font-family: 'Elsie';
-	font-size: 200%;
-	padding: 10px;
-	border-radius: 12px;
-	background-color: darkred;
-	color: wheat;
-}
-
-.display-menu {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	display: flex;
-	width: 100%;
-	margin: 0;
-	left: 0;
-	right: 0;
-	top: 0;
-	transition: 2s;
-}
-
-.toolbar-displaymenu {
-	list-style-type: none;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	color: white;
-	margin-right: 30px;
-}
-
-.toolbar-displaymenu > li {
-	margin: 12px;
-	top: -200px;
-}
-
-.toolbar-displaymenu a {
-	text-decoration: none;
-	font-weight: bold;
-	color: brown;
-	font-size: 21px;
-	font-family: 'Elsie';
-	text-shadow: 2px 2px 1px rgb(149, 128, 131);
-}
-
-/* ---------------- class properties, first section ----------------- */
-
-.header {
-	display: flex;
-	justify-content: flex-end;
-	margin: 40px;
-	height: 80px;
-}
-
-.tool-bar {
-	margin-top: 30px;
-	display: flex;
-	justify-content: flex-end;
-	list-style-type: none;
-}
-
-.image img {
-	border-radius: 285px;
-	box-sizing: border-box;
-}
-
-.introduction {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-.introduction p::selection {
-	background-color: rgb(185, 170, 67);
-	color: whitesmoke;
-}
-
-h1,
-h3,
-.introduction-message,
-.tools-intro {
-	font-family: 'Mansalva';
-	color: brown;
-	font-size: 30px;
-	text-align: center;
-}
-
-.introduction-message a {
-	text-decoration: none;
-	border-radius: 50px;
-	padding: 15px;
-	color: crimson;
-	font-size: 40px;
-}
-
-.introduction-message a:hover {
-	font-size: 47px;
-	color: rgba(220, 20, 60, 0.692);
-}
-
-/* ------------------ class properties, second section (my tools) -------------- */
-
-.tools {
-	background: linear-gradient(to bottom, rgb(230, 204, 179), #f0bf75, #d4a274, #f3c299, #f2f39c);
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.tool-image,
-.project-image {
-	width: auto;
-	height: 100px;
-	background-color: white;
-}
-
-.each-tool:hover,
-.each-tool a:hover {
-	cursor: url('./images/emoticon.png'), auto;
-}
-
-.each-tool,
-.each-project {
-	height: 200px;
-	width: 200px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: white;
-	border: 1px solid rgb(224, 126, 192);
-	border-radius: 115px;
-	padding: 23px;
-	margin: 25px;
-	-webkit-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
-	-moz-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
-	box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
-}
-
-.my-tools {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	max-width: 80%;
-}
-
-/* ----------------- class properties third section (my projects) ----------------- */
-
-.my-projects {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	margin-top: 5%;
-	max-width: 70%;
-}
-
-.my-project-links {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	color: burlywood;
-	font-size: 26px;
-	font-family: 'Elsie';
-	margin-top: 0;
-	cursor: pointer;
-}
-
-.each-project a,
-.each-tool a {
-	color: black;
-	font-family: 'Mansalva';
-	font-size: 28px;
-	text-align: center;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-}
-
-.each-project img {
-	border-radius: 100px;
-}
-
-/* ---------------------- "a" tag properties for links ------------------ */
-
-.each-project a:hover {
-	font-size: 31px;
-	color: rgba(220, 20, 60, 0.692);
-}
-
-.tool-bar a:hover,
-.my-project-links a:hover,
-.bottom-tool-bar a:hover {
-	background-color: rgb(180, 75, 107);
-	color: white;
-}
-
-.tool-bar a,
-.my-project-links a,
-.bottom-tool-bar a {
-	text-decoration: none;
-	background-color: brown;
-	color: burlywood;
-	padding: 15px;
-	margin: 13px;
-	border-radius: 50px;
-	border: rgb(230, 204, 179) dotted 2px;
-	font-size: 26px;
-	font-family: Elsie;
-}
-
-/* -------------------- class properties for last section (footer) ------------------- */
-
-.bottom-tool-bar {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	margin: 40px;
-	padding-bottom: 25px;
-}
-
-/* --------------------- properties for icons and their "a" tag ------------------ */
-
-.icons {
-	font-size: 45px;
-}
-
-.icons a {
-	background-color: transparent;
-	text-decoration: none;
-	padding: 25px;
-}
-
-/* --------------------- final class property for hidden elements ------------------ */
+/* ------------------------- hidden elements ------------------------ */
 
 .hidden {
 	display: none;
 }
 
-/* --------------------- end of styling for desktop screen sizes ------------------- */
+/* ------------------------ mobile menu display ------------------ */
 
-/* ----------------- responsive media queries design patterns ------------------- */
+.mobile {
+	left: 0;
+	top: 12px;
+	transition: 1s;
+	animation: ease-in;
+}
+
+/* ------------------------------------ media queries ----------------------------- */
 
 @media (min-width: 600px) and (max-width: 900px) {
-	aside {
-		max-width: 100%;
-		height: auto;
+	main div:first-child {
+		flex-direction: column;
 	}
 
-	.tools,
-	.introduction {
-		max-width: max-content;
+	header ul {
+		position: absolute;
+		left: -50px;
+		top: -500px;
 	}
 
-	.my-projects {
-		min-width: 100%;
+	header ul li {
+		max-width: 120px;
+		margin: 0;
+	}
+	header ul li a {
+		font-size: 25px;
+		padding: 8px;
 	}
 
-	.bottom-tool-bar,
-	.tool-bar {
+	footer ul {
 		display: none;
 	}
 
-	.menu-button {
+	li a:not(header li a, footer li a) {
+		font-size: 25px;
+	}
+
+	button {
 		display: flex;
 		justify-content: flex-end;
 	}
 
-	.my-project-links li {
-		display: flex;
-		align-items: center;
-		text-align: center;
+	section div {
+		width: 100%;
 	}
 
-	.each-project,
-	.each-tool {
-		max-width: 30%;
-		height: auto;
+	footer {
+		border: none;
 	}
 }
 
 @media (max-width: 600px) {
-	.bottom-tool-bar,
-	.tool-bar {
-		display: none;
-	}
-	.menu-button {
-		display: flex;
-		justify-content: flex-end;
+	main div:first-child {
+		flex-direction: column;
 	}
 
-	.my-tools,
-	.my-projects {
+	header div:last-child {
+		padding: 0;
+		width: 50px;
+		height: auto;
+	}
+
+	header ul {
 		display: flex;
-		justify-content: center;
-		min-width: 100%;
+		align-items: center;
+		justify-content: start;
+		position: absolute;
+		left: 0;
+		top: -500px;
+		margin: 2px;
+	}
+
+	header ul li {
+		max-width: 100px;
+		margin: 2px;
+	}
+
+	header ul li a {
+		border: none;
+		font-size: 20px;
+		background-color: blanchedalmond;
+		color: brown;
+		margin: 0;
+		padding: 6px;
+	}
+
+	footer ul {
+		display: none;
+	}
+
+	nav:not(header nav) {
 		margin: 0;
 	}
 
-	.my-project-links li {
+	ul {
+		padding: 0;
+	}
+
+	aside p {
+		font-size: 60%;
+	}
+
+	li a:not(header li a, footer li a) {
+		font-size: 15px;
+		padding: 10px;
+		margin: 0;
+	}
+
+	button {
 		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		text-align: center;
-		max-width: 30%;
+		justify-content: flex-end;
+		font-size: 1em;
+		padding: 2px;
+		margin: 0;
+	}
+
+	main div:first-child div:first-child {
+		margin: 3px;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	main img:not(section img) {
+		width: 300px;
+	}
+
+	section {
+		padding-bottom: 80px;
+	}
+
+	section div {
+		width: 100%;
+	}
+
+	section div > div {
+		max-width: 145px;
+	}
+
+	i:not(button i) {
+		font-size: 25px;
+		margin: 10px;
+		padding: 0;
+	}
+
+	footer {
+		border: none;
 	}
 }

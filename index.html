@@ -5,147 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Portfolio CSS</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="icon" type='image/x-icon' href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- -------------------------- header menu section --------------------------- -->
     <header>
-        <nav class="header">
-
-            <button class="menu-button hidden" id="menu-button"><a href="#">Menú<i class="fas fa-bars"></i></a></button>
-            <div class="display-menu">
-                <ul class="tool-bar">
-                    <li><a href="#introduction">About me</a></li>
-                    <li><a href="#tools">Tools</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div>
+            <nav>
+                <button><a href="#"><i class="fas fa-bars"></i></a></button>
+                <div>
+                    <ul>
+                        <li><a href="#introduction">About me</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
     </header>
 
-    <!-- ------------------ introduction, first section ------------------------- -->
+    <main>
+        <!-- ------------------ introduction, first section ------------------------- -->
 
-    <div id="introduction" class="introduction">
-        <div class="introduction-message">
-            <h1>¡Hi there! I'm <span> anaclette </span>. </h1>
-            <p>Proud mom. Writer for fun. Mad about ice-cream.</p>
-            <p>¿What can I do?</p>
-            <p><a href="#projects">Let me show you</a></p>
-        </div>
-        <div class="image">
-            <img src="./images/woman with a cup.jpg">
-        </div>
-    </div>
-
-    <!-- ----------------------- My tools, second section ---------------------- -->
-
-    <h2>My tools</h2>
-
-    <p class="tools-intro">These are the resources I can make amazing stuff with.</p>
-
-    <section id="tools" class="tools">
-        <div class="my-tools">
-
-            <div class="each-tool">
-                <img class="tool-image" src="https://image.flaticon.com/icons/svg/1216/1216733.svg">
-                <p><a target="_blank" href="https://lenguajehtml.com/html/">HTML5</a></p>
+        <div>
+            <div id="introduction">
+                <h1>¡Hi there! I'm <span> anaclette</span>, </h1>
+                <p>Front End Developer. Writer for fun. Mad about ice-cream.</p>
+                <p>What can I do?</p>
+                <p><a href="#projects">Let me show you</a></p>
             </div>
-            <div class="each-tool">
-                <img class="tool-image"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSE17GfPi19Erv-5QIHedCfVs0o5E0Q4PIm7g&usqp=CAU">
-                <p><a target="_blank" href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a></p>
-            </div>
-            <div class="each-tool">
-                <img class="tool-image"
-                    src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/288_Sass-512.png">
-                <p><a target="_blank" href="https://sass-lang.com/">Sass</a></p>
-            </div>
-            <div class="each-tool">
-                <img class="tool-image"
-                    src="https://st.depositphotos.com/1796420/4113/v/950/depositphotos_41138921-stock-illustration-vector-icon-of-orange-javascript.jpg">
-                <p><a target="_blank" href="https://www.javascript.com/">JavaScript</a></p>
-            </div>
-            <div class="each-tool">
-                <img class="tool-image"
-                    src="https://desafiolatam.com/assets/cursos/react/icono-react-8e9b14b4495e5a21ccd56ea61f95a7fc30fc5eb8ee92e44fefd1277d62a93296.png">
-                <p><a target="_blank" href="https://reactjs.org/docs/getting-started.html">React</a></p>
-            </div>
-            <div class="each-tool">
-                <img class="tool-image"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png">
-                <p><a target="_blank" href="https://git-scm.com/">Git</a></p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ------------------------- aside quote ----------------------------- -->
-
-    <aside>
-        <p>“Be the change you want to see in the world.”</p>
-        <p>Mahatma Gandhi</p>
-    </aside>
-
-    <!-- ------------------------ My projects, third section ---------------- -->
-
-    <h2>My projects</h2>
-
-    <!-- ------------------ menu project links ------------------------- -->
-
-    <section id="projects">
-        <nav>
-            <ul class="my-project-links">
-                <li id="my-projects-button" data-name="static-website"><a>HTML5/CSS</a></li>
-                <li id="my-projects-button" data-name="rock-paper-scissors"><a>JavaScript</a></li>
-                <li id="my-projects-button" data-integrate="all-of-them"><a>All of them</a></li>
-                <li id="my-projects-button" data-name="puzzle"><a>React</a></li>
-
-            </ul>
-        </nav>
-
-        <!-- ----------------------- each project cards ---------------------- -->
-
-        <div class="my-projects">
-            <div class="each-project" data-name="puzzle" data-integrate="all-of-them">
-                <img class="project-image" src="./images/puzzle.jpg">
-                <p><a href="projects.html">Fun puzzle</a></p>
-            </div>
-            <div class="each-project" data-name="portfolio" data-integrate="all-of-them">
-                <img class="project-image" src="./images/design.png">
-                <p><a target="_blank" href="https://github.com/anaclette?tab=repositories">Portfolio</a></p>
-            </div>
-            <div class="each-project" data-name="rock-paper-scissors" data-integrate="all-of-them">
-                <img class="project-image" src="./images/rockpapersissors.jpg">
-                <p><a target="_blank" href="https://anaclette.github.io/RockPaperSissors/">Rock, Paper, Scissors</a></p>
-            </div>
-            <div class="each-project" data-name="static-website" data-integrate="all-of-them">
-                <img class="project-image" src="./images/website.png">
-                <p><a href="index.html">Static website</a></p>
-
+            <div>
+                <img src="./images/woman with a cup.jpg">
             </div>
         </div>
-    </section>
+
+        <!-- ----------------------- My tools, second section ---------------------- -->
+
+        <section id="tools">
+
+            <h2>My tools</h2>
+            <p>These are the resources I can make amazing stuff with.</p>
+
+            <div>
+
+                <div>
+                    <img src="https://image.flaticon.com/icons/svg/1216/1216733.svg">
+                    <p><a target="_blank" href="https://lenguajehtml.com/html/">HTML5</a></p>
+                </div>
+                <div>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSE17GfPi19Erv-5QIHedCfVs0o5E0Q4PIm7g&usqp=CAU">
+                    <p><a target="_blank" href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a></p>
+                </div>
+                <div>
+                    <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/288_Sass-512.png">
+                    <p><a target="_blank" href="https://sass-lang.com/">Sass</a></p>
+                </div>
+                <div>
+                    <img
+                        src="https://st.depositphotos.com/1796420/4113/v/950/depositphotos_41138921-stock-illustration-vector-icon-of-orange-javascript.jpg">
+                    <p><a target="_blank" href="https://www.javascript.com/">JavaScript</a></p>
+                </div>
+                <div>
+                    <img
+                        src="https://desafiolatam.com/assets/cursos/react/icono-react-8e9b14b4495e5a21ccd56ea61f95a7fc30fc5eb8ee92e44fefd1277d62a93296.png">
+                    <p><a target="_blank" href="https://reactjs.org/docs/getting-started.html">React</a></p>
+                </div>
+                <div>
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png">
+                    <p><a target="_blank" href="https://git-scm.com/">Git</a></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ------------------------- aside quote ----------------------------- -->
+
+        <aside>
+            <p>“Be the change you want to see in the world.”</p>
+            <p>Mahatma Gandhi</p>
+        </aside>
+
+        <!-- ------------------------ My projects, third section ---------------- -->
+
+
+        <!-- ------------------ menu project links ------------------------- -->
+
+        <h2 id="projects">My projects</h2>
+        <section>
+            <nav>
+                <ul>
+                    <li class="link" data-name="static-website"><a>HTML5/CSS</a></li>
+                    <li class="link" data-name="javascript"><a>JavaScript</a></li>
+                    <li class="link" data-name="all-of-them"><a>All of them</a></li>
+                    <li class="link" data-name="puzzle"><a>React</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- ----------------------- each project cards ---------------------- -->
+
+            <div>
+                <div class="each-project" data-name="puzzle">
+                    <img src="./images/puzzle.jpg">
+                    <p><a href="projects.html">Fun puzzle</a></p>
+                </div>
+                <div class="each-project" data-name="portfolio">
+                    <img src="./images/design.png">
+                    <p><a target="_blank" href="https://github.com/anaclette?tab=repositories">Portfolio</a></p>
+                </div>
+                <div class="each-project" data-name="javascript">
+                    <img src="./images/rockpapersissors.jpg">
+                    <p><a target="_blank" href="https://anaclette.github.io/Rock-Paper-Scissors/">Rock, Paper,
+                            Scissors</a>
+                    </p>
+                </div>
+                <div class="each-project" data-name="static-website">
+                    <img src="./images/woman with a cup.jpg">
+                    <p><a href="index.html">Profile</a></p>
+
+                </div>
+                <div class="each-project" data-name="static-website">
+                    <img src="./images/Writing contest.jfif">
+                    <p><a target="_blank" href="https://anaclette.github.io/Writing-Contest/">Writing contest</a>
+                    </p>
+
+                </div>
+                <div class="each-project" data-name="static-website">
+                    <img src="./images/First Random Page.jpg">
+                    <p><a target="_blank" href="https://anaclette.github.io/First-WebPage-Ever/">My lovely 1st
+                            webpage</a></p>
+
+                </div>
+                <div class="each-project" data-name="javascript">
+                    <img src="./images/Marvel.jpg">
+                    <p><a target="_blank" href="https://anaclette.github.io/ApiProject/">Marvel comics API</a></p>
+
+                </div>
+                <div class="each-project" data-name="javascript">
+                    <img src="./images/Piggy money saver.jfif">
+                    <p><a target="_blank" href="https://anaclette.github.io/Control-de-gastos/">Expense Manager</a>
+                    </p>
+
+                </div>
+                <div class="each-project" data-name="javascript">
+                    <img src="./images/Instruments.jpg">
+                    <p><a target="_blank" href="https://anaclette.github.io/Tienda-Online/">E-commerce</a>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- ---------------------- final section or footer ---------------------- -->
 
     <footer id="contact">
         <nav>
-            <ul class="bottom-tool-bar">
+            <ul>
                 <li><a href="#introduction">About me</a></li>
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-
             </ul>
         </nav>
 
-        <div class="icons">
+        <div>
             <a target="_blank" href="https://es-es.facebook.com/ana.laclau"><i
                     class="devicon-facebook-plain colored"></i></a>
             <a target="_blank" href="https://github.com/anaclette"><i class="devicon-github-plain colored"></i></a>
@@ -156,7 +187,6 @@
 
         <h3>Thank you for your visit & ¡have a great day!</h3>
     </footer>
-
     <script src="index.js"></script>
 </body>
 
