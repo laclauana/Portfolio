@@ -91,11 +91,6 @@ section:first-of-type h2 {
 
 /* ------------------------ introduction content alignment and general looks ---------------- */
 
-main div:first-child {
-	display: flex;
-	align-items: center;
-}
-
 main div:first-child div:first-child {
 	flex-direction: column;
 	margin: 50px;
@@ -222,6 +217,7 @@ section div > div {
 	flex-direction: column;
 	width: 180px;
 	height: 180px;
+	flex-shrink: 1;
 	font-family: 'Mansalva';
 }
 
@@ -296,8 +292,17 @@ footer {
 		display: none;
 	}
 
+	ul:not(header ul, footer ul) {
+		display: flex;
+		align-items: center;
+	}
+
+	li:not(header li, footer li) {
+		width: 30vh;
+	}
+
 	li a:not(header li a, footer li a) {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	button {
@@ -408,7 +413,8 @@ footer {
 	}
 
 	section div > div {
-		max-width: 145px;
+		max-width: 30vh;
+		margin: 5px;
 	}
 
 	i:not(button i) {
