@@ -41,12 +41,19 @@ nav {
 }
 
 nav a:not(button a) {
-	background-color: brown;
-	color: burlywood;
 	padding: 15px;
 	border-radius: 50px;
 	border: rgb(230, 204, 179) dotted 2px;
 	font-size: 26px;
+}
+
+header li a {
+	background-color: brown;
+	color: burlywood;
+}
+
+li a {
+	color: brown;
 }
 
 li {
@@ -90,17 +97,17 @@ section:first-of-type h2 {
 
 /* ------------------------ introduction content alignment and general looks ---------------- */
 
-main div:first-child {
-	display: flex;
-	align-items: center;
-}
-
-main div:first-child div:first-child {
-	flex-direction: column;
+main div:first-child > div:first-child {
 	margin: 50px;
 	font-family: 'Mansalva';
 	color: brown;
 	font-size: 25px;
+	display: flex;
+	align-items: center;
+}
+
+main div:first-child > div:first-child > div:first-child {
+	flex-direction: column;
 }
 
 main div:first-child div a {
@@ -283,12 +290,16 @@ footer {
 	}
 
 	header ul li {
-		max-width: 120px;
+		max-width: 130px;
 		margin: 0;
 	}
 	header ul li a {
 		font-size: 25px;
 		padding: 8px;
+		margin: 0;
+		border: none;
+		background-color: transparent;
+		color: brown;
 	}
 
 	footer ul {
@@ -351,7 +362,7 @@ footer {
 	header ul li a {
 		border: none;
 		font-size: 20px;
-		background-color: blanchedalmond;
+		background-color: transparent;
 		color: brown;
 		margin: 0;
 		padding: 6px;
