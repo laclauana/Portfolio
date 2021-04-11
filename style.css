@@ -68,7 +68,7 @@ a {
 	cursor: pointer;
 }
 
-nav a:hover {
+nav a:not(button a):hover {
 	background-color: indianred;
 	color: white;
 }
@@ -79,7 +79,7 @@ button {
 	font-family: 'Elsie';
 	font-size: 25px;
 	padding: 7px;
-	border-radius: 12px;
+	border-radius: 4px;
 	background-color: darkred;
 }
 
