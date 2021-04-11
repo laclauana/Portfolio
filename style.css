@@ -90,6 +90,11 @@ section:first-of-type h2 {
 
 /* ------------------------ introduction content alignment and general looks ---------------- */
 
+main div:first-child {
+	display: flex;
+	align-items: center;
+}
+
 main div:first-child div:first-child {
 	flex-direction: column;
 	margin: 50px;
