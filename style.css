@@ -76,11 +76,10 @@ nav a:not(button a):hover {
 button {
 	display: none;
 	border: none;
-	font-family: 'Elsie';
 	font-size: 25px;
 	padding: 7px;
 	border-radius: 4px;
-	background-color: darkred;
+	background-color: crimson;
 }
 
 /* -------------------------- main content general alignment ----------------- */
@@ -347,6 +346,7 @@ footer {
 @media (max-width: 600px) {
 	main div:first-child {
 		flex-direction: column;
+		margin: 20px;
 	}
 
 	header div:last-child {
@@ -436,14 +436,13 @@ footer {
 	}
 
 	section div > div {
-		max-width: 140px;
+		max-width: 150px;
 		max-height: 165px;
-		margin: 7px;
 		padding: 25px;
 	}
 
 	section div > div > img {
-		max-width: 120px;
+		max-width: 80px;
 	}
 
 	section:last-child div a,
