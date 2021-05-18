@@ -186,21 +186,37 @@ section:nth-child(2) {
 section:nth-child(2) div > div {
 	cursor: url('./images/emoticon.png'), auto;
 	justify-content: center;
+	border-radius: 115px;
+	margin: 15px;
+	-webkit-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
+	-moz-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
+	box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
 }
 
 section:nth-child(2) img {
 	height: 100px;
 }
 
+section:last-child div > div {
+	margin: 7px;
+}
+
+section:last-child div > div:hover {
+	-webkit-box-shadow: 8px 5px 5px 3px rgba(102, 96, 102, 0.79);
+	-moz-box-shadow: 8px 5px 5px 3px rgba(102, 96, 102, 0.79);
+	box-shadow: 8px 5px 5px 3px rgba(102, 96, 102, 0.79);
+	transform: scale(1.03);
+}
+
 section:nth-child(2) a,
 section:last-child div a {
-	font-size: 23px;
-	color: black;
+	font-size: 20px;
+	color: rgb(180, 75, 107);
 }
 
 section:last-child div a:hover {
-	font-size: 25px;
-	color: rgb(180, 75, 107);
+	font-size: 21px;
+	color: brown;
 }
 
 section:first-of-type p:not(div p),
@@ -217,13 +233,8 @@ section:last-child img {
 }
 
 section div > div {
-	-webkit-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
-	-moz-box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
-	box-shadow: 10px 7px 7px 3px rgba(102, 96, 102, 0.79);
-	border-radius: 115px;
 	background-color: white;
 	border: 1px solid rgb(224, 126, 192);
-	margin: 15px;
 	padding: 25px;
 	flex-direction: column;
 	width: 180px;
