@@ -293,6 +293,11 @@ footer {
 		flex-direction: column;
 	}
 
+	main div:first-child > div:first-child {
+		margin: 0;
+		margin-top: 25px;
+	}
+
 	header ul {
 		position: absolute;
 		left: -50px;
@@ -346,7 +351,23 @@ footer {
 @media (max-width: 600px) {
 	main div:first-child {
 		flex-direction: column;
-		margin: 20px;
+		margin-top: 50px;
+	}
+
+	main div:first-child div:first-child {
+		margin: 3px;
+	}
+
+	main div:first-child > div:first-child > div:first-child > a,
+	main div:first-child > div:first-child > div:first-child > p,
+	main div:first-child > div:first-child > div:first-child > h1,
+	main div:first-child > div:first-child > div:first-child > span,
+	section:first-of-type p:not(div p) {
+		font-size: 1.05em;
+	}
+
+	main img:not(section img) {
+		width: 250px;
 	}
 
 	header div:last-child {
@@ -407,10 +428,6 @@ footer {
 		font-size: 1em;
 	}
 
-	main div:first-child div:first-child {
-		margin: 3px;
-	}
-
 	h1 {
 		font-size: 35px;
 	}
@@ -423,10 +440,6 @@ footer {
 		font-size: 20px;
 	}
 
-	main img:not(section img) {
-		width: 300px;
-	}
-
 	section {
 		padding-bottom: 80px;
 	}
@@ -436,13 +449,13 @@ footer {
 	}
 
 	section div > div {
-		max-width: 150px;
-		max-height: 165px;
-		padding: 25px;
+		max-width: 135px;
+		max-height: 145px;
+		padding: 15px;
 	}
 
 	section div > div > img {
-		max-width: 80px;
+		max-height: 70px;
 	}
 
 	section:last-child div a,
