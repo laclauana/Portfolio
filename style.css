@@ -116,8 +116,7 @@ article {
 	left: 0;
 	right: 0;
 	height: 100%;
-	background: rgb(34, 193, 195);
-	background: radial-gradient(circle, rgb(228, 152, 152) 0%, rgba(253, 187, 45, 1) 100%);
+	background-color: rgb(175, 90, 90);
 	color: white;
 }
 
@@ -526,7 +525,7 @@ footer {
 
 	article > span {
 		margin: 9px;
-		font-size: 17px;
+		font-size: 20px;
 	}
 
 	i:not(button i) {
