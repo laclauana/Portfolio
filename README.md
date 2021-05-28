@@ -11,7 +11,7 @@
 
  Mainly HTML and CSS and a bit of Javascript. 
 
-### Where to check on my first static website
+### Where to check out my portfolio project
 
 [https://anaclette.github.io/Portfolio/]
 

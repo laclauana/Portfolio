@@ -48,12 +48,22 @@ nav a:not(button a) {
 }
 
 header li a {
-	background-color: brown;
+	background-color: firebrick;
 	color: burlywood;
 }
 
 li a {
-	color: brown;
+	color: firebrick;
+}
+
+header li:first-of-type > a:hover {
+	background-color: wheat;
+	color: crimson;
+	transform: rotate(-5deg);
+}
+
+header li:first-of-type > a:hover::after {
+	content: "♥";
 }
 
 li {
@@ -92,6 +102,25 @@ section:first-of-type h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+article i {
+	align-self: flex-end;
+}
+
+article > span {
+	margin: 16px;
+	order: 1;
+	padding: 10px;
+	font-size: 22px;
+	font-family: 'Patrick Hand', cursive;
 }
 
 /* ------------------------ introduction content alignment and general looks ---------------- */
@@ -138,7 +167,7 @@ main div:first-child a::selection {
 	color: peru;
 }
 
-span {
+span:not(article > span) {
 	letter-spacing: 3px;
 	color: crimson;
 }
@@ -277,6 +306,36 @@ footer {
 	display: none;
 }
 
+/* ------------------------- warning button on projects section ---------------- */
+
+.warning {
+	border: 1px solid crimson;
+	background-color: transparent;
+	color: crimson;
+	font-family: 'Mansalva';
+	display: flex;
+	cursor: pointer;
+}
+
+.fa-times {
+	cursor: pointer;
+	color: white;
+}
+
+.warning:hover {
+	transform: scale(1.1);
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: 100%;
+	background: rgb(34, 193, 195);
+	background: radial-gradient(circle, rgb(228, 152, 152) 0%, rgba(253, 187, 45, 1) 100%);
+	color: white;
+}
+
 /* ------------------------ mobile menu display ------------------ */
 
 .mobile {
@@ -337,6 +396,12 @@ footer {
 	button {
 		display: flex;
 		justify-content: flex-end;
+	}
+
+	article > span {
+		margin: 16px;
+		padding: 4px;
+		font-size: 17px;
 	}
 
 	section:nth-child(2) div:not(section:nth-child(2) div > div) {
@@ -461,6 +526,12 @@ footer {
 	section:last-child div a,
 	section:nth-child(2) a {
 		font-size: 20px;
+	}
+
+	article > span {
+		margin: 9px;
+		padding: 0;
+		font-size: 17px;
 	}
 
 	i:not(button i) {

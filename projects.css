@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
 
+html {
+	background-color: #4a503d;
+	border: 15px dotted white;
+}
 body {
-	background-color: darkolivegreen;
+	background-color: #faf2da;
 }
 
 * {
-	margin: 20px;
-	padding: 10px;
+	margin: 7px;
 }
 
-p {
+body > div:last-child {
+	display: flex;
+	justify-content: space-between;
+	background-color: #4a503d;
+	width: 100%;
+	padding-top: 45px;
+	margin-left: 0;
+}
+
+p:not(.about-me > p) {
+	padding: 10px;
 	font-size: 60px;
 	font-family: 'Mansalva';
-	color: white;
+	color: #faf2da;
 	text-align: center;
 }
 
@@ -24,9 +37,27 @@ button {
 	padding: 0;
 	font-family: 'Elsie';
 	padding: 5px;
-	border: darkgreen 4px dotted;
+	border: wheat 4px dotted;
 	border-radius: 30px;
 	background-color: darksalmon;
+}
+
+button:first-of-type {
+	order: 2;
+}
+
+a {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-decoration: none;
+	color: firebrick;
+	font-size: 30px;
+}
+
+a:hover {
+	transform: scale(1.05);
+	color: #faf2da;
 }
 
 .projects {
@@ -35,27 +66,71 @@ button {
 	align-items: center;
 }
 
-a {
+.about-me {
 	display: flex;
-	justify-content: center;
-	align-content: center;
-	text-decoration: none;
-	color: rgb(160, 25, 97);
-	font-size: 30px;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-family: 'Patrick Hand', cursive;
 }
 
-a:hover {
-	font-size: 35px;
+.about-me > p {
+	font-size: 25px;
+	color: #4a503d;
+	text-indent: 1.5em;
+	text-align: justify;
+}
+
+.about-me > p:nth-child(7),
+.about-me > p:nth-child(8) {
+	text-shadow: 2px 5px 3px #8e9775;
+}
+
+h1,
+.about-me > div:first-of-type > h2 {
+	font-family: Sacramento;
+	font-size: 50px;
+	color: #4a503d;
+}
+
+.about-me > div:first-of-type > p {
+	font-family: 'Patrick Hand', cursive;
+	text-align: justify;
+	font-size: 23px;
+	letter-spacing: 1.5px;
+}
+.about-me > div:first-of-type > p:nth-child(even) {
+	color: #faf2da;
+	border-radius: 5px;
+	background-color: #8e9775;
+}
+
+.about-me > div:first-of-type > p:nth-child(odd) {
+	border-radius: 5px;
+	margin: 0;
 	color: firebrick;
+	font-weight: bolder;
+}
+
+.about-me > div:first-of-type > p:last-of-type {
+	background: rgb(170, 72, 107);
+	background: linear-gradient(90deg, rgba(255, 188, 93, 1) 0%, rgba(255, 163, 163, 1) 79%, rgb(235, 164, 140) 100%);
+	color: #4a503d;
 }
 
 @media (max-width: 600px) {
-	* {
-		margin: 0;
+	button a {
+		font-size: 20px;
+	}
+	.about-me > div:first-of-type > h2 {
+		font-size: 2em;
+		max-width: 280px;
 	}
 
-	p {
-		font-size: 3rem;
-		margin-bottom: 60px;
+	.about-me > p {
+		font-size: 20px;
+	}
+
+	.about-me > div:first-of-type > p {
+		font-size: 17.5px;
 	}
 }
