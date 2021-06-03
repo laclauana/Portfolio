@@ -21,6 +21,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* --------------------------- body general appearance -------------------- */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: rgb(230, 204, 179);
 	margin: 0;
@@ -172,14 +176,25 @@ main img:not(section img) {
 	width: 350px;
 }
 
+main img:not(section img):hover {
+	filter: saturate(2.2);
+}
+
 h1::selection,
 main div:first-child a::selection {
 	background-color: wheat;
 	color: peru;
 }
 
+h1:hover {
+	filter: brightness(1.08);
+	transition: 0.3s;
+	letter-spacing: 2px;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc,
+		0 8px 0 #ccc, 0 9px 0 #ccc, 0 50px 25px rgba(0, 0, 0, 0.2);
+}
+
 span:not(article > span) {
-	letter-spacing: 3px;
 	color: crimson;
 }
 
@@ -207,7 +222,7 @@ section {
 }
 
 section:nth-child(2) div:not(section:nth-child(2) div > div) {
-	width: 60vw;
+	width: 80vw;
 }
 
 section:nth-child(2) div,
