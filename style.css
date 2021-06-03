@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-
+@keyframes move {
+	to {
+		transform: translateX(-100%);
+	}
+}
 /* ---------------- scrollbar styling ------------------- */
 
 body::-webkit-scrollbar {
@@ -23,6 +27,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -187,7 +192,7 @@ main div:first-child a::selection {
 }
 
 h1:hover {
-	filter: brightness(1.08);
+	filter: brightness(1.09);
 	transition: 0.3s;
 	letter-spacing: 2px;
 	text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc,
@@ -344,7 +349,11 @@ footer {
 }
 
 .warning:hover {
-	transform: scale(1.1);
+	transform: skewX(10deg);
+	transition: 0.2s;
+	filter: brightness(1.1);
+	border: 1px solid white;
+	border-radius: 25px;
 }
 
 /* ------------------------ mobile menu display ------------------ */
