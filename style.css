@@ -336,7 +336,6 @@ footer > div > a > i {
 
 footer > div > a > i:hover {
 	filter: contrast(2);
-	box-shadow: 2px 5px 5px whitesmoke;
 }
 
 .fa-instagram {
