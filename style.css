@@ -334,10 +334,6 @@ footer > div > a > i {
 	font-size: 30px;
 }
 
-footer > div > a > i:hover {
-	filter: contrast(2);
-}
-
 .fa-instagram {
 	font-size: 33px;
 	color: deeppink;
