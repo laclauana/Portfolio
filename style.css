@@ -281,7 +281,7 @@ section:first-of-type p:not(div p),
 h3 {
 	font-family: 'Mansalva';
 	color: brown;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 section:last-child img {
@@ -357,11 +357,12 @@ footer > div > a > i {
 }
 
 .warning:hover {
-	transform: skewX(10deg);
-	transition: 0.2s;
-	filter: brightness(1.1);
+	filter: brightness(1.5);
 	border: 1px solid white;
 	border-radius: 25px;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	transition: 0.1s;
 }
 
 /* ------------------------ mobile menu display ------------------ */
