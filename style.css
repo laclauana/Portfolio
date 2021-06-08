@@ -601,15 +601,16 @@ footer > div > a > i {
 	}
 
 	section:last-child div:nth-child(3) a,
-	section:last-child div:nth-child(9) a {
-		bottom: 5px;
+	section:last-child div:nth-child(9) a,
+	section:last-child div:nth-child(11) a {
+		bottom: 13px;
 	}
 	section:last-child div:nth-child(2) a,
 	section:last-child div:nth-child(7) a,
 	section:last-child div:nth-child(12) a,
 	section:last-child div:nth-child(13) a,
 	section:last-child div:nth-child(14) a {
-		bottom: 10px;
+		bottom: 19px;
 	}
 	section:last-child div:nth-child(1) a,
 	section:last-child div:nth-child(6) a {
@@ -617,10 +618,6 @@ footer > div > a > i {
 	}
 	section:last-child div:nth-child(5) img {
 		height: 100%;
-	}
-
-	section:last-child div:nth-child(11) a {
-		bottom: 13px;
 	}
 
 	article > span {
