@@ -30,3 +30,11 @@ projectLinks.forEach((link) => {
 
 warningButton.onclick = () => warningArticle.classList.remove('hidden');
 closeWarningArticle.onclick = () => warningArticle.classList.add('hidden');
+
+// ---------------- Accessing projects when clicking on card instead of "a" tags --------------------
+
+projects.forEach((project) => {
+	project.onclick = () => {
+		location.href = project.children[1];
+	};
+});
